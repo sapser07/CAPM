@@ -1,0 +1,8 @@
+//Create a Node.js skeleton project
+cds init
+
+
+//npm install 
+
+//Link your repository with github via installing github 
+
