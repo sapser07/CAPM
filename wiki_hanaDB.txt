@@ -20,4 +20,16 @@ npm i @sap/hana-client
 //Build Project - Convert existing DB tables into HANA DB
 cds Build
 
+//Link your ORG ID with HANA DB via navigating to "SAP HANA Cloud" -> HDB Insance -> 3 dots -> Manage Configurations -> "Instance Mapping" -> Add Mapping -> Envoirnment ID (ORG ID)
+
+
+//Connect HANA DB with BAS Tool
+cf login
+API endpoint - https://api.cf.us10-001.hana.ondemand.com/
+user ID - <EMail ID>
+password - Password
+
+//Create HANA HDI Instance -SAP HANA Schemas & HDI Containers (HDI Shared)
+
+//Connect BAS with HDI using ... in BAS => Run Configurations -> Create -> Connect
 

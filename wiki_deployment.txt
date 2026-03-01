@@ -1,0 +1,6 @@
+//Create a mta.yaml file
+cds add mta
+npm install
+
+//right click in mta.yaml file and click on Build MTA project
+Build file can be found under MTA_ArCHIVES -> File.mtar 
