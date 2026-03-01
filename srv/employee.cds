@@ -6,6 +6,7 @@ using btp.db as bd from '../db/data-model';
 service ODataServices {
  
  //Enable Create button 
+@odata.draft.enabled
 
 //Expose Entity like Employee
 entity EmployeeColl as select from bd.Employee;
@@ -53,6 +54,67 @@ UI: {
          Value : modifiedAt,
      },
  ],
+
+ //Facet (Sections) - To user enter the data for Create line Items.
+ FieldGroup  #BasicDetails : {
+     $Type : 'UI.FieldGroupType',
+     Data : [
+         {
+             $Type : 'UI.DataField',
+             Value : EMPLOYEEID,
+         },
+         {
+             $Type : 'UI.DataField',
+             Value : NAME,
+         },
+         {
+             $Type : 'UI.DataField',
+             Value : AGE,
+         },
+         {
+             $Type : 'UI.DataField',
+             Value : EMAIL,
+         },
+     ],
+ },
+
+ FieldGroup #AdminData : {
+     $Type : 'UI.FieldGroupType',
+     Data : [
+         {
+             $Type : 'UI.DataField',
+             Value : createdBy,
+         },
+         {
+             $Type : 'UI.DataField',
+             Value : createdAt,
+         },
+         {
+             $Type : 'UI.DataField',
+             Value : modifiedBy,
+         },
+         {
+             $Type : 'UI.DataField',
+             Value : modifiedAt,
+         },
+     ],
+ },
+
+ //Facet - Group the section within one Facet
+ Facets  : [
+     {
+         $Type : 'UI.ReferenceFacet',
+         Target : '@UI.FieldGroup#BasicDetails',
+         Label : 'Basic Details',
+         ID : 'IDBasicData'
+     },
+     {
+         $Type : 'UI.ReferenceFacet',
+         Target : '@UI.FieldGroup#AdminData',
+         Label : 'Admin Details',
+         ID : 'IDAdminData',
+     },
+ ],
 }
 
 )
@@ -63,3 +125,6 @@ UI: {
   AGE @title : 'Age';
   EMAIL @title : 'E-Mail ID';
 }
+
+
+
