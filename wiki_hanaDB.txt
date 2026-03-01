@@ -1,0 +1,23 @@
+
+//SAP HANA Cloud (Tool) - Subscribe from BTP Cookpit 
+
+//Assign the Role to the User - Associated with HANA
+
+//Open SAP HANA Cloud and Create a Instance and allow all IP Addresses
+
+//Install HDB Packages
+npm i hdb 
+cds add hana 
+npm i @sap/hana-client
+
+//Once CDS add HANA added, check in package.json if below file added else add it manually.
+ "cds": {
+    "requires": {
+      "db": "hana"
+    }
+
+
+//Build Project - Convert existing DB tables into HANA DB
+cds Build
+
+
