@@ -2,7 +2,9 @@
 //When ever use an existing function or modue, use "Using" keyboard
 using btp.db as bd from '../db/data-model';
 
+
 //Service Definition
+@requires : 'authenticated-user'
 service ODataServices {
  
  //Enable Create button 

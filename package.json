@@ -15,6 +15,19 @@
     "@sap/cds-dk": "^9",
     "@sap/hdi-deploy": "4.9.5"
   },
+
+  "cds": {
+  "requires": {
+    "auth": {
+      "kind": "basic",
+      "users": {
+        "admin": {
+          "password": "admin"
+        }
+      }
+    }
+  }
+},
   "scripts": {
     "start": "cds-serve"
   },

@@ -37,3 +37,6 @@ password - Password
 //Run below command to fix the future error
 cds deploy --to hana:HDI_DB_Instance
 
+
+//Run in hybrid mode
+cds watch --profile hybrid
