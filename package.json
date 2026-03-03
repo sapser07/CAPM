@@ -18,13 +18,5 @@
   "scripts": {
     "start": "cds-serve"
   },
-  "private": true,
-  "cds": {
-    "requires": {
-      "db": "hana"
-    },
-    "hana": {
-      "deploy-format": "hdbtable"
-    }
-  }
+  "private": true
 }

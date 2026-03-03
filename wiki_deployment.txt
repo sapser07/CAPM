@@ -4,3 +4,6 @@ npm install
 
 //right click in mta.yaml file and click on Build MTA project
 Build file can be found under MTA_ArCHIVES -> File.mtar 
+
+
+//Right click under MTA_ArCHIVES -> File.mtar file and click on Deploy

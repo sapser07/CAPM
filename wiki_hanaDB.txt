@@ -33,3 +33,7 @@ password - Password
 
 //Connect BAS with HDI using ... in BAS => Run Configurations -> Create -> Connect
 
+
+//Run below command to fix the future error
+cds deploy --to hana:HDI_DB_Instance
+
