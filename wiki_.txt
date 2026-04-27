@@ -1,4 +1,11 @@
 //Convert V4 to V2
 https://www.npmjs.com/package/@sap/cds-odata-v2-adapter-proxy
 
+//SAP Learning
+1. Learning.sap
+2. Help.sap
+3. developer.sap 
+
+
+
 
